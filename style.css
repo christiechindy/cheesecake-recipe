@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap');
+
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------------------------------------------*/
+.wrapper {
+    max-width: 970px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+}
+
+/*---HEADER---*/
+h1 {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.3;
+    margin-top: 3rem;
+    margin-bottom: 12px;
+}
+
+header .caption .icon {
+    margin-top: 1.5px;
+}
+
+.row {
+    width: 15px;
+    display: flex;
+    margin-top: 1px;
+}
+
+.circle {
+    background-color: #c4c4c4;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    margin-right: 2px;
+    margin-top: 3px;
+}
+
+.caption {
+    display: flex;
+
+}
+
+.text-capt {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4f4f4f;
+    margin-left: 12px;
+    max-width: 592px;
+}
+
+header .image {
+    max-width: 969px;
+}
+
+#cheesecake-pict {
+    width: 100%;
+    margin-top: 40px;
+}
+
+/*--------------------MAIN--------------------*/
+body {
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.IngredientsNSteps {
+    max-width: 600px;
+}
+
+section h2 {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333;
+    margin-top: 48px;
+}
+
+main section h2:last-of-type {
+    margin-bottom: 32px;
+}
+
+section h3{
+    margin-top: 32px;
+    margin-bottom: 31px;
+    font-family: "Playfair Display";
+    font-style: italic;
+    font-size: 18px;
+    color: #333;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+main section .points {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+main .sentences {
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #333;
+    display: block;
+}
+
+main section .points .square {
+    margin-bottom: 0;
+    min-width: 20px;
+    height: 20px;
+    border: 1px solid #828282;
+    border-radius: 4px;
+    margin-right: 17px;
+}
+
+main section .number {
+    min-width: 36px;
+    height: 36px;
+    border-radius: 6px;
+    background-color: #f2994a;
+    margin-right: 15px;
+    
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+    text-align: center;
+}
+
+main section:last-child .sentences {
+    line-height: 22px;
+}
+
+main section:last-child .points {
+    margin-bottom: 22px;
+}
+
+main .source, main .source a {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 24px;
+    color: #BDBDBD;
+
+    margin-top: 35px;
+}
+
+main .content {
+    display: flex;
+    position: relative;
+}
+
+main .content .info {
+    width: 226px;
+    height: 367px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+
+    margin-top: 48px;
+    position: absolute;
+    right: 0;
+
+    padding: 50px 50px 50px 43px;
+    box-sizing: border-box;
+}
+
+main .content .info .icon {
+    font-size: 30px;
+}
+
+main .content .info .points:first-child .icon {
+    color: #f2994a;
+}
+
+main .content .info .icon {
+    margin-right: 15px;
+}
+
+main .content .info .points {
+    margin-bottom: 43px;
+    display: flex;
+    align-items: center;
+}
+
+main .content .info .title {
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12.5px;
+    color: #BDBDBD;
+    margin-bottom: 4px;
+}
+
+main .content .info .details {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #333;
+}
+
+main .content .info .points:first-child .details {
+    color: #f2994a;
+}
+
+/*---------------------------FOOTER-----------------------------*/
+footer .footer {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+    margin: 0 auto;
+    margin-top: 105px;
+}
+
+footer .footer span.username {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*-------------------------------MEDIA QUERIES------------------------------*/
+@media (max-width: 54rem) { /*880px*/
+    main .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .content .info {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        position: static;
+        width: 100%;
+        height: fit-content;
+        padding: 1rem;
+        margin-top: 1.5rem;
+        box-sizing: border-box;
+    }
+
+    main .content .info .points {
+        margin: 0;
+    }
+
+    main .IngredientsNSteps section h2 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 40rem) {
+    header h1 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    header .text-capt {
+        font-size: 12px;
+    }
+
+    header .image #cheesecake-pict {
+        margin-top: 1rem;
+    }
+
+    main .content .info {
+        flex-wrap: wrap;
+    }
+
+    main .content .info .points .icon {
+        margin-right: 5px;
+        font-size: 1.2rem;
+    }
+
+    main .content .info .points .title {
+        margin-bottom: 0;
+        font-size: 0.5rem;
+    }
+
+    main .content .info .points .details {
+        font-size: 10px;
+    }
+
+    main .content .info .points:first-child {
+        width: 100%;
+        margin-bottom: 1.3rem;
+    }
+
+    main .wrapper .source {
+        margin-top: 0;
+    }
+
+    main .IngredientsNSteps section h2 {
+        font-size: 18px;
+        margin-top: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+    main .IngredientsNSteps h3 {
+        font-size: 1rem;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    main .IngredientsNSteps section .cheesecake h3 {
+        margin-top: 2rem;
+    }
+
+    main .IngredientsNSteps section .points .sentences {
+        font-size: 14px;
+    }
+
+    main .source, main .source a {
+        font-size: 12px;
+    }
+
+    footer .footer {
+        font-size: 14px;
+    }
+}
